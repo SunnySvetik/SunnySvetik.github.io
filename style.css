@@ -1,0 +1,401 @@
+﻿/* {
+    margin: 0;
+    padding: 0;
+}*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Прижатие footer к низу окна браузера */
+.content {
+    min-height: calc(100vh - 70px);
+    margin: 0 20px;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about_laluna {
+    font-family: "Times New Roman", "Courier New", Verdana;
+    font-size: 18px;
+}
+
+.about_laluna p:first-letter {
+    font-family: "Algerian";
+    font-size: 30px;
+}
+
+.header {
+    height: 80px;
+    border-bottom: 1px #707070 solid;
+    background: url("images/header_background.png") 0 0;
+    background-size: 200px;
+    /*margin-top: 8px;*/
+}
+
+.logo {
+    margin-left: 10px;
+    float: left;
+}
+
+.menu {
+    color: blue;
+    font-family: "Times New Roman", "Courier New", Verdana;
+    font-size: 18px;
+    font-weight: bold;
+    /*font-style: italic;*/
+    text-transform: uppercase;
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+}
+
+.menu a:hover {
+    color: darkslateblue;
+}
+
+.menu a:hover:visited {
+    color: darkslateblue;
+}
+
+.menu a:visited {
+    color: hotpink;
+}
+
+.inactive {
+    color: black;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.dress_container_main_page a img {
+    outline: 3px #f8f8f8 solid;
+}
+
+.dress_container_main_page a img:hover {
+    outline: 3px white solid;
+}
+
+.container_breadcrumbs {
+    height: 50px;
+    border-bottom: 1px #707070 solid;
+    background: white;
+    margin: 0 -20px;
+}
+
+.container_breadcrumbs ul {
+    padding-left: 15px;
+    position: absolute;
+}
+
+.container_breadcrumbs ul li {
+    display: inline-block;
+    padding-right: 10px;
+    font-family: "Times New Roman", "Courier New", Verdana;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.container_breadcrumbs a {
+    text-decoration: none;
+    color: #707070;
+}
+
+.container_breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.heading_code, .heading_description, .heading_characteristics, .heading_detailed_description, .heading_table_size {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #EAEAEA;
+}
+
+.heading_code {
+    margin-top: 0;
+}
+
+.heading_description + p {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.heading_detailed_description + p {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.heading_characteristics + ul {
+    text-transform: lowercase;
+    color: #484343;
+    list-style-image: url("images/icon_tochka.png");
+}
+
+span {
+    text-transform: none;
+}
+
+input[type="text"] {
+    width: 300px;
+    height: 20px;
+}
+
+select {
+    width: 250px;
+    height: 25px;
+}
+
+textarea {
+    width: 700px;
+    height: 200px;
+}
+
+input[type="reset"]{
+    width: 230px;
+    height: 30px;
+}
+
+.button_submit {
+    width: 150px;
+    height: 30px;
+}
+
+input, select, textarea {
+    color: #484343;
+    font-family: "Times New Roman", "Courier New", Verdana;
+    font-size: 16px;
+}
+
+textarea {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.email:focus {
+    color: blue;
+    background-color: #EAEAEA;
+}
+
+input[type="text"], textarea {
+    text-transform: capitalize;
+    padding: 1px 5px;
+}
+
+table {
+    border: 1px solid #484343;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+td, th {
+    border: 1px solid #484343;
+    width: 100px;
+    padding: 0px 5px;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+    height: 40px;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+.main_img_dress {
+    border: #484343 solid 1px;
+    /*outline: #484343 solid 1px;*/
+}
+
+.main_img_dress_link {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.main_img_dress:hover {
+    /*border: none;
+    padding: 1px;*/
+    border: #f8f8f8 solid 1px;
+    /*outline: none;*/
+}
+
+.tovar_info {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.button_buy {
+    width: 265px;
+    height: 40px;
+    background-color: #00AA5B;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.button_buy:hover {
+    border: 1px solid green;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type="reset"]:hover, .button_submit:hover {
+    font-weight: bold;
+}
+
+.button_buy:active, input[type="reset"]:active, .button_submit:active {
+    color: black;
+}
+
+.dress_container {
+    display: flex;
+    justify-content: center;
+}
+
+.dress_container_main_page {
+    display: flex;
+    justify-content: center;
+}
+
+.dress_container_viewed {
+    display: flex;
+}
+
+.dress {
+    width: 200px;
+}
+
+.dress_container a img {
+    outline: 3px #f8f8f8 solid;
+}
+
+.dress_container a img:hover {
+    outline: 3px white solid;
+}
+
+.map {
+    width: 100%;
+    height: 374px;
+}
+
+.footer {
+    font-family: "Times New Roman", "Courier New", Verdana;
+    font-size: 14px;
+    height: 70px;
+    background-color: white;
+    border-top: 1px #707070 solid;
+    margin-top: 20px;
+    /*position: fixed;
+    right: 2.5%;
+    left: 2.5%;
+    bottom: 0;*/
+}
+
+.footer p {
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
+/* Страница регистрации*/
+.logo_registration {
+    display: block;
+    margin: 10px auto;
+}
+
+.header_registration {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.content_registration {
+    min-height: calc(100vh - 70px);
+    width: 50%;
+    margin: 0 auto;
+    background-color: #cde2f5;
+}
+
+.content_registration form {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.content_registration label {
+    display: block;
+    color: #484343;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 20px 5px 5px;
+}
+
+#email_registration, #password_registration, #phone_registration, #name_registration, #second_name_registration {
+    width: 370px;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+#name_registration, #second_name_registration {
+    text-transform: capitalize;
+}
+
+.button_registration {
+    width: 370px;
+    height: 35px;
+    border: none;
+    background-color: #484343;
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.button_registration:hover {
+    background-color: #AAA;
+}
+
+.button_registration:active {
+    background-color: #484343;
+}
+
+.footer_registration {
+    margin: 0;
+    font-family: "Times New Roman", "Courier New", Verdana;
+    font-size: 14px;
+    height: 70px;
+    background-color: white;
+    border-top: 1px #707070 solid;
+}
+
+.footer_registration p {
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
+/* Страница регистрации*/
+
